@@ -4,12 +4,10 @@ name: Print RUN successful
 on:
   push:
     branches:
-      - main 
-      - test
-      - test2 # You can specify the branches to trigger on
+      - '**'
   pull_request:
     branches:
-      - main
+      - '**'
 
 jobs:
   print-success:
